@@ -99,7 +99,13 @@ class PasswordManager extends Component {
   }
 
   render() {
-    const {websiteInput, usernameInput, passwordInput, noOfPasswords, searchInput}= this.state
+    const {
+      websiteInput,
+      usernameInput,
+      passwordInput,
+      noOfPasswords,
+      searchInput,
+    } = this.state
     return (
       <div className="app-container">
         <div className="password-manager-app-container">
@@ -109,11 +115,15 @@ class PasswordManager extends Component {
             alt="app logo"
           />
           <div className="add-password-container">
-            <img
-              className="password-manager-img"
-              src="https://assets.ccbp.in/frontend/react-js/password-manager-sm-img.png"
-              alt="password manager"
-            />
+            <picture>
+              <source media="(max-width: 767px)" srcSet="https://assets.ccbp.in/frontend/react-js/password-manager-sm-img.png" />
+              <source media="(min-width: 768px)" srcSet="https://assets.ccbp.in/frontend/react-js/password-manager-lg-img.png" />
+              <img
+                className="password-manager-img"
+                src="https://assets.ccbp.in/frontend/react-js/password-manager-sm-img.png"
+                alt="password manager"
+              />
+            </picture>
             <form className="form" onSubmit={this.onAddPassword}>
               <h1 className="add-password-text">Add New Password</h1>
               <div className="input-container">

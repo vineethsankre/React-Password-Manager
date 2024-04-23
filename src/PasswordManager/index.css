@@ -215,3 +215,19 @@
   width: 100%;
   padding: 0px;
 }
+@media screen and (min-width: 768px) {
+  .password-manager-app-container {
+    width: 70%;
+    max-width: 1140px;
+  }
+  .add-password-container {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 40px;
+  }
+  .form {
+    width: 50%;
+    order: -1;
+  }
+  
+}
