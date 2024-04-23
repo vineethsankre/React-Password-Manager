@@ -1,0 +1,216 @@
+.app-container {
+  background-image: linear-gradient(to bottom, #9ba9eb, #c3caea);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.password-manager-app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-top: 25px;
+}
+.logo-image {
+  width: 120px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+.add-password-container {
+  background-color: #5763a5;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 10px;
+}
+.password-manager-img {
+  width: 250px;
+}
+.form {
+  background-color: #454f84;
+  border-radius: 20px;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.add-password-text {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+}
+.input-container {
+  background-color: #f8fafc;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.input-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+}
+.input-image {
+  width: 24px;
+  height: 24px;
+}
+.input {
+  background-color: #f8fafc;
+  border: none;
+  border-left: 1px solid #b6c3ca;
+  outline: none;
+  margin: 0px;
+  height: 50px;
+  flex-grow: 1;
+  color: #94a3b8;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 4px;
+}
+.add-button {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  background-color: #0b69ff;
+  padding: 8px 30px;
+  width: 30%;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+.password-manager-container {
+  background-color: #5763a5;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 10px;
+  margin-top: 18px;
+}
+.password-manager-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.your-passwords-container {
+  display: flex;
+  align-items: center;
+  width: 55%;
+  flex-grow: 1;
+}
+.your-passwords-text {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.passwords-count {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 0px 12px;
+  margin-right: 8px;
+}
+.password-search-container {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  padding: 0px;
+}
+.search-icon-container {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+.search-input {
+  margin-top: 0px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  border-left: 1px solid #b6c3ca;
+  height: 25px;
+  width: 110px;
+  color: #94a3b8;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 4px;
+  flex-grow: 0;
+}
+.line {
+  border: 1px solid #7683cb;
+  width: 100%;
+}
+.show-passwords-container {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  outline: none;
+  border: none;
+  width: 15px;
+  height: 15px;
+}
+.show-passwords-text {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+}
+.passwords-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.no-passwords-img {
+  width: 300px;
+  height: 220px;
+}
+.no-passwords-text {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 600;
+}
+.password-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0px;
+}
