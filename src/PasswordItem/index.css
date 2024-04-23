@@ -1,12 +1,12 @@
 .password-list-item {
   list-style-type: none;
-  border-radius: 4px;
-  border: 1px solid #b6c3ca;
+  border-radius: 2px;
+  border: 1px solid #7683cb;
   margin-bottom: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  padding: 10px;
 }
 .password-details-container {
   display: flex;
@@ -17,12 +17,12 @@
   border: none;
   margin-right: 10px;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .initial {
   color: #fff;
@@ -40,13 +40,14 @@
   font-size: 14px;
   font-weight: 500;
   margin: 0px;
+  margin-bottom: 5px;
 }
 .username {
   color: #fff;
   font-family: 'Roboto';
   font-size: 14px;
   margin: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .password {
   color: #fff;
@@ -54,7 +55,7 @@
   font-size: 14px;
   font-weight: 500;
   margin: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .stars-image {
   width: 100px;
