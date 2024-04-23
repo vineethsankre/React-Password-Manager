@@ -11,7 +11,7 @@ class PasswordManager extends Component {
     passwordInput: '',
     passwordsList: [],
     isChecked: false,
-    searchInput:'',
+    searchInput: '',
   }
 
   onChangeWebsiteInput = event => {
@@ -43,6 +43,7 @@ class PasswordManager extends Component {
       noOfPasswords: prevState.noOfPasswords + 1,
     }))
   }
+
   deletePassword = id => {
     const {passwordsList} = this.state
     const updatedPasswordList = passwordsList.filter(
@@ -53,9 +54,11 @@ class PasswordManager extends Component {
       noOfPasswords: prevState.noOfPasswords - 1,
     }))
   }
-  onChangeSearchInput = (event) => {
+
+  onChangeSearchInput = event => {
     this.setState({searchInput: event.target.value})
   }
+
   toggleShowPassword = () => {
     this.setState(prevState => ({isChecked: !prevState.isChecked}))
   }
@@ -76,12 +79,10 @@ class PasswordManager extends Component {
   renderPasswordsContainer = () => {
     const {passwordsList, isChecked, searchInput} = this.state
     const searchResults = passwordsList.filter(eachPassword =>
-      eachPassword.website
-        .toLowerCase()
-        .includes(searchInput.toLowerCase()),
+      eachPassword.website.toLowerCase().includes(searchInput.toLowerCase()),
     )
     if (searchResults.length === 0) {
-        return this.renderNoPasswordsContainer()
+      return this.renderNoPasswordsContainer()
     }
     return (
       <ul className="password-list-container">
@@ -98,8 +99,7 @@ class PasswordManager extends Component {
   }
 
   render() {
-    const {websiteInput, usernameInput, passwordInput, noOfPasswords, searchInput} =
-      this.state
+    const {websiteInput, usernameInput, passwordInput, noOfPasswords, searchInput}= this.state
     return (
       <div className="app-container">
         <div className="password-manager-app-container">
@@ -194,7 +194,12 @@ class PasswordManager extends Component {
             </div>
             <hr className="line" />
             <div className="show-passwords-container">
-              <input type="checkbox" className="checkbox" id="checkbox" onChange={this.toggleShowPassword}/>
+              <input
+                type="checkbox"
+                className="checkbox"
+                id="checkbox"
+                onChange={this.toggleShowPassword}
+              />
               <label className="show-passwords-text" htmlFor="checkbox">
                 Show Passwords
               </label>
